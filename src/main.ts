@@ -1,20 +1,12 @@
-interface User {
+interface UserInterface {
   name: string;
-  age?: number;
-  getMessage(): string;
+  surname: string;
 }
 
-const user: User = {
-  name: "Monster",
-  age: 30,
-  getMessage() {
-    return "Hello" + name;
-  },
-};
+let username: string = "alex";
 
-const user2: User = {
-  name: "Jack",
-  getMessage() {
-    return "Hello" + name;
-  }
-}
+let pageName: string | number = "1";
+
+let errorMessage: string | null = null;
+
+let user: UserInterface | null = null;
