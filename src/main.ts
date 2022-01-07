@@ -1,5 +1,13 @@
-const getFullName = (name: string, surname: string): string => {
-  return name + " " + surname;
+interface User {
+  name: string;
+  age?: number;
+}
+
+const user: User = {
+  name: "Monster",
+  age: 30,
 };
 
-console.log(getFullName("Monster", "Lessons"));
+const user2: User = {
+  name: "Jack",
+}
