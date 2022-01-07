@@ -1,2 +1,5 @@
-const hello: string = "world";
-console.log("hello: ", hello);
+const getFullName = (name: string, surname: string) => {
+  return name + " " + surname;
+};
+
+console.log(getFullName("Monster", "Lessons"));
